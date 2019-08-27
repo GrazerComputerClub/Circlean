@@ -28,12 +28,13 @@ if [ -e /dev/sda ]; then
     #trap clean EXIT TERM INT
     cd /opt/groomer
     /usr/sbin/led &
+    echo "GROOMER: start"
     /opt/groomer/init.sh
   else
-    echo GROOMER: USB device /dev/sdb not found    
+    echo "GROOMER: USB device /dev/sdb not found"    
   fi
 else
-  echo GROOMER: USB device /dev/sda not found
+  echo "GROOMER: USB device /dev/sda not found"
 fi
 
 exit 0
