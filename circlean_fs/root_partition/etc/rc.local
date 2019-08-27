@@ -21,15 +21,19 @@ clean(){
     /sbin/shutdown -P -h now
 }
 
-echo "GROOMER: end of boot, running rc.local."
+# echo "GROOMER: end of boot, running rc.local."
 
 if [ -e /dev/sda ]; then
   if [ -e /dev/sdb ]; then
-    trap clean EXIT TERM INT
+    #trap clean EXIT TERM INT
     cd /opt/groomer
     /usr/sbin/led &
-    ./init.sh
+    /opt/groomer/init.sh
+  else
+    echo USB device /dev/sdb not found    
   fi
+else
+  echo USB device /dev/sda not found
 fi
 
 exit 0
