@@ -30,10 +30,10 @@ if [ -e /dev/sda ]; then
     /usr/sbin/led &
     /opt/groomer/init.sh
   else
-    echo USB device /dev/sdb not found    
+    echo GROOMER: USB device /dev/sdb not found    
   fi
 else
-  echo USB device /dev/sda not found
+  echo GROOMER: USB device /dev/sda not found
 fi
 
 exit 0
