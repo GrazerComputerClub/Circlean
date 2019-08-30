@@ -1,3 +1,5 @@
 # The purpose of this rules file is to ensure that the top left usb port and its partitions have a symlink to /dev/source_key[num], and the other ports to /dev/dest_key[num]
-KERNEL=="sd*", KERNELS=="1-1.2", SUBSYSTEMS=="usb", SYMLINK+="source_key%n"
-KERNEL=="sd*", KERNELS=="1-1.[3-5]", SUBSYSTEMS=="usb", SYMLINK+="dest_key%n"
+KERNEL=="sd*", KERNELS=="1-1.[1-2]", SUBSYSTEMS=="usb", SYMLINK+="source_key%n"  RUN+="/usr/local/bin/led.sh 16 1"
+ACTION=="remove", KERNELS=="1-1.[1-2]", SUBSYSTEMS=="usb" RUN+="/usr/local/bin/led.sh 16 0"
+KERNEL=="sd*", KERNELS=="1-1.[3-5]", SUBSYSTEMS=="usb", SYMLINK+="dest_key%n" RUN+="/usr/local/bin/led.sh 21 1"
+ACTION=="remove", KERNELS=="1-1.[3-5]", SUBSYSTEMS=="usb" RUN+="/usr/local/bin/led.sh 21 0"

@@ -27,7 +27,7 @@ if [ -e /dev/sda ]; then
   if [ -e /dev/sdb ]; then
     trap clean EXIT TERM INT
     cd /opt/groomer
-    /usr/sbin/led &
+    /usr/local/bin/led.sh 4 1
     echo "GROOMER: start"
     /opt/groomer/init.sh
   else
