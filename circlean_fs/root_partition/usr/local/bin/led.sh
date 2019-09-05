@@ -61,6 +61,7 @@ process_usb_state(){
              started)
                   echo "started"
                   seton 20
+                  service usb-led start
                   ;;
              stopped)
                   echo "stopped"
