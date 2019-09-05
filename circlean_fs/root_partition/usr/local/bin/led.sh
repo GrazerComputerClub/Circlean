@@ -72,7 +72,7 @@ process_usb_state(){
                   seton 24
                   ;;
              *)
-                  echo "error: groomer state $2 not supported"                  ;;
+                  echo "error: groomer state $2 not supported"
                   ;; 
           esac
           ;;          
