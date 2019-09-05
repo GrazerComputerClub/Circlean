@@ -21,7 +21,7 @@ setinput(){
         gpio -g mode $1 in
 }
 
-process_state(){
+process_usb_state(){
 
   case $2 in
      connected)
@@ -48,12 +48,15 @@ process_state(){
  case $1 in
      badusb)
           echo -n "bad port: "
-          process_state 16 $2
+          process_usb_state 16 $2
           ;;
      goodusb)
           echo -n "good port: "
-          process_state 21 $2
+          process_usb_state 21 $2
           ;;
+     groomer)
+          echo "groomer: $2"
+          ;;          
      *)
           echo "error: port not supported (use: $0 goodusb connected)"
   esac
