@@ -55,8 +55,23 @@ process_usb_state(){
           process_usb_state 21 $2
           ;;
      groomer)
-          echo "groomer: $2"
+          echo -n "groomer: "
+   
+          case $2 in
+             started)
+                  echo "started"
+                  seton 20
+                  ;;
+             stopped)
+                  echo "stopped"
+                  setoff 20
+                  ;;
+             *)
+                  echo "error: groomer state $2 not supported"                  ;;
+                  ;; 
+          esac
           ;;          
      *)
           echo "error: port not supported (use: $0 goodusb connected)"
+          ;; 
   esac
