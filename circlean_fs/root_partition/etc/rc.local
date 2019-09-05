@@ -29,10 +29,10 @@ if [ -e /dev/sda ]; then
     cd /opt/groomer
     #gpio -g mode 4 out
     #gpio -g write 4 1
-    /usr/local/bin/led.sh groomer start
+    /usr/local/bin/led.sh groomer started
     echo "GROOMER: start"
     /opt/groomer/init.sh
-    /usr/local/bin/led.sh groomer stop
+    /usr/local/bin/led.sh groomer stopped
   else
     echo "GROOMER: USB device /dev/sdb not found"    
   fi
