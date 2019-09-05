@@ -49,12 +49,12 @@ process_usb_state(){
      badusb)
           echo -n "bad port: "
           process_usb_state 16 $2
-          process_usb_state 26 $2
+          process_usb_state 7 $2
           ;;
      goodusb)
           echo -n "good port: "
           process_usb_state 21 $2
-          process_usb_state 22 $2
+          process_usb_state 25 $2
           ;;
      groomer)
           echo -n "groomer: "
@@ -63,13 +63,13 @@ process_usb_state(){
              started)
                   echo "started"
                   seton 20
-                  seton 24
+                  seton 8
                   service usb-led start
                   ;;
              stopped)
                   echo "stopped"
                   setoff 20
-                  seton 24
+                  seton 8
                   ;;
              *)
                   echo "error: groomer state $2 not supported"
