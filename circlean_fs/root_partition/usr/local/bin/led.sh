@@ -64,8 +64,8 @@ process_usb_state(){
                   echo "started"
                   seton 20
                   seton 8
-                  /usr/local/bin/usb_led -pin 20 -off 15% -inv &
-                  /usr/local/bin/usb_led -pin 8 -off 15% -inv &
+                  nice -n 15 /usr/local/bin/usb_led -pin 20 -max 1000kbps -off 15% -inv &
+                  nice -n 15 /usr/local/bin/usb_led -pin 8  -max 1000kbps -off 15% -inv &
                   service usb-led start
                   ;;
              stopped)
