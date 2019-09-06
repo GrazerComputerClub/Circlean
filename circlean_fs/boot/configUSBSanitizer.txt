@@ -1,0 +1,7 @@
+
+# trigger switch GPIO13, GPIO19, GPIO26 and GPIO27 -> F12
+dtoverlay=gpio-key,gpio=13,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
+dtoverlay=gpio-key,gpio=19,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
+dtoverlay=gpio-key,gpio=26,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
+dtoverlay=gpio-key,gpio=27,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
+
