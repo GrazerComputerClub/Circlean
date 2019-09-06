@@ -64,12 +64,15 @@ process_usb_state(){
                   echo "started"
                   seton 20
                   seton 8
+                  /usr/local/bin/usb_led -pin 20 -off 15% -inv &
+                  /usr/local/bin/usb_led -pin 8 -off 15% -inv &
                   service usb-led start
                   ;;
              stopped)
                   echo "stopped"
+                  killall usb_led
                   setoff 20
-                  seton 8
+                  setoff 8
                   ;;
              *)
                   echo "error: groomer state $2 not supported"
