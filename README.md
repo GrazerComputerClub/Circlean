@@ -6,6 +6,17 @@ CIRCLean
 ![CIRCLean logo](https://www.circl.lu/assets/images/logos/circlean.png)
 ![Cleaner in action](http://www.circl.lu/assets/images/CIRCLean/CIRCLean.png)
 
+Modifications by Grazer Computer Club
+===============================
+ * support leds (pi-stop or custom) 
+   - red ... bad usb-drive connected
+   - orange ... groomer running (blinking means actual usb transmit ongoning)
+   - green ... good usb-drive connected
+   
+   drop support for led at bcm gpio 4 (usally connected to 1-wire bus) 
+   
+ * no shutdown after operation (our image will support switch to start groomer) 
+
 How To Install
 ==============
 
