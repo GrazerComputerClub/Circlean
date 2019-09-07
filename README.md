@@ -8,14 +8,22 @@ CIRCLean
 
 Modifications by Grazer Computer Club
 ===============================
- * support leds (pi-stop or custom) 
+ * support leds (pi-stop or custom, 26- or 40-pin GPIO) 
    - red ... bad usb-drive connected
    - orange ... groomer running (blinking means actual usb transmit ongoning)
    - green ... good usb-drive connected
    
    drop support for led at bcm gpio 4 (usally connected to 1-wire bus) 
    
- * no shutdown after operation (our image will support switch to start groomer) 
+ * Famous classic music Midi-files with CC-license 
+ * groomer will start as service an not via rc.local
+ * groomer start via F12 or GPIO input (26- or 40-pin version input supported)
+ * no shutdown after operation (our image will support switch to start groomer)
+ * performance optimisation (especially for Pi 1)
+ 
+ Tested:
+   * Pi 1 Rev. 1
+   * Pi Zero 1.3 with USB-HAT 
 
 How To Install
 ==============
