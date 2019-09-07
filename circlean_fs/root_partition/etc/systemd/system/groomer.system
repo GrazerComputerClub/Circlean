@@ -1,0 +1,15 @@
+[Unit]
+Description=USB Sanitizer script
+After=rc-local.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/usr/local/bin/
+ExecStart=/bin/bash /usr/local/bin/groomer.sh
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
+
