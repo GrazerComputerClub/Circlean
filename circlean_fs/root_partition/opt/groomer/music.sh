@@ -10,7 +10,17 @@ run_timidity() {
     files=(${MUSIC_DIR}*)
     while true; do
         # -id flags set interface to "dumb" and -qq silences most/all terminal output
-        "${TIMIDITY}" -idqq "${files[RANDOM % ${#files[@]}]}"
+        # 44100 khz uses ~97% cpu load on Pi 1 !
+        CPU=`cat /proc/cpuinfo | grep Hardware | cut -d : -f 2 | cut -d " " -f 2`
+        if [ $CPU = "BCM2835"] ; then
+          echo "Music: using low quality audio to reduce cpu load for ARM11 core"
+          # uses ~15-30% cpu load @ Pi 1
+          FREQ = 11025
+        else
+          FREQ = 22050
+        fi
+        killall ${TIMIDITY}
+        "${TIMIDITY}" -idqq -s $FREQ "${files[RANDOM % ${#files[@]}]}"
     done
 }
 
