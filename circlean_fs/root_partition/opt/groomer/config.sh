@@ -15,7 +15,7 @@ readonly DST_MNT="/media/dst"
 readonly TEMP="${DST_MNT}/temp"
 readonly LOGS_DIR="${DST_MNT}/logs"
 readonly DEBUG_LOG="/tmp/groomer_debug_log.txt"
-readonly MUSIC_DIR="/opt/midi/"
+readonly MUSIC_DIR="/opt/midi/classic/"
 
 # Commands
 readonly SYNC="/bin/sync"
