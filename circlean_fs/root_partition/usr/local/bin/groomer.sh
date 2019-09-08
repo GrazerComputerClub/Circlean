@@ -16,7 +16,7 @@ if [ -e /dev/sda ]; then
     echo "GROOMER: start"
     /opt/groomer/init.sh
     /usr/local/bin/led.sh groomer stopped
-    killall timidity
+    killall timidity || echo ""
   else
     echo "GROOMER: USB device /dev/sdb not found"
   fi
