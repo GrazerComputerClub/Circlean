@@ -22,11 +22,23 @@ Modifications by Grazer Computer Club
  * performance optimisation (especially for Pi 1)
  
  Tested:
-   * Pi 1 Rev. 1
+   * Pi 1 B Rev. 1
+   * Pi 3 B Rev. 1.2
    * Pi Zero 1.3 with USB-HAT 
 
-How To Install
-==============
+How To Install - GC2 version
+============================
+
+Download latest GC2 Image >19.09 from [Releases](https://github.com/GrazerComputerClub/Circlean/releases). 
+On  Windows use [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Rufus](https://rufus.ie/) to write compressed image to SD card. On Linux use Etcher(https://www.balena.io/etcher/) to write compressed image to SD card.
+The smallest possible SD card size is 4 GiB.
+
+If you'd like to contribute to the project or build the image yourself, see
+[contributing.md](CONTRIBUTING.md) and the [setup instructions](doc/setup_with_proot.md).
+
+
+How To Install - old!
+====================
 
 [Graphical how-to and pre-built image download](http://circl.lu/projects/CIRCLean/).
 
