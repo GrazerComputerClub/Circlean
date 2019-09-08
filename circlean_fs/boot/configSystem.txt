@@ -1,0 +1,8 @@
+[pi1]
+# Overclock Pi 1
+arm_freq=800
+
+[all]
+gpu_mem=16
+dtoverlay=pi3-disable-wifi
+dtoverlay=pi3-disable-bt
