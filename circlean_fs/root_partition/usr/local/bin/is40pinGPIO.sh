@@ -3,11 +3,11 @@
 Revision=`cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'`
 RevisionDec=`echo $(( 16#$Revision ))`
 echo -n "CPU Revision: ${RevisionDec}, "
-if [ $RevisionDec -ge 16 ]; then
-        echo 40-pin GPIOs
-        exit 0
-else
+if [ $RevisionDec -lt 16 ]; then
         echo 26-pin GPIOs
         exit 1
+else
+        echo 40-pin GPIOs
+        exit 0
 fi
 
