@@ -119,7 +119,7 @@ there are more than 2).
 3c. Optional: Connect Headpone or speaker to audio out (plays music while programm is running)
 4. Connect the power to the micro USB port.
 
-    *Note*: Use a 5V, 700mA+ regulated power supply
+    *Note*: Use a appropriate regulated power supply for your Raspberry Pi board (min. 5V, 1000mA+)
 
 5. Wait until you do not see any active/blinking GPIO8 or GPIO20 LED on the board, or if you
    connected the HDMI cable, check the screen or if you connected speaker wait until music stops. 
