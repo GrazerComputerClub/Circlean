@@ -39,8 +39,8 @@ If you'd like to contribute to the project, see [contributing.md](CONTRIBUTING.m
 The images was created with [Raspbian-Image-Generator/ pi-gen](https://github.com/GrazerComputerClub/Raspbian-Image-Generator) based on  [setup instructions](doc/setup_with_proot.md).
 
 
-How To Install - old!
-====================
+How To Install - old versions
+=============================
 
 [Graphical how-to and pre-built image download](http://circl.lu/projects/CIRCLean/).
 
