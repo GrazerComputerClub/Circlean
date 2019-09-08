@@ -30,11 +30,11 @@ How To Install - GC2 version
 ============================
 
 Download latest GC2 Image >19.09 from [Releases](https://github.com/GrazerComputerClub/Circlean/releases). 
-On  Windows use [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Rufus](https://rufus.ie/) to write compressed image to SD card. On Linux use Etcher(https://www.balena.io/etcher/) to write compressed image to SD card.
+On  Windows use [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Rufus](https://rufus.ie/) to write compressed image to SD card. On Linux use [Etcher](https://www.balena.io/etcher/) to write compressed image to SD card.
 The smallest possible SD card size is 4 GiB.
 
-If you'd like to contribute to the project or build the image yourself, see
-[contributing.md](CONTRIBUTING.md) and the [setup instructions](doc/setup_with_proot.md).
+If you'd like to contribute to the project, see [contributing.md](CONTRIBUTING.md). 
+The images was created with [Raspbian-Image-Generator/ pi-gen](https://github.com/GrazerComputerClub/Raspbian-Image-Generator) based on  [setup instructions](doc/setup_with_proot.md).
 
 
 How To Install - old!
