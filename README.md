@@ -57,10 +57,11 @@ FAQ
 
 **Question**: I can't login, what is the password? 
 
-**Answer**: For security reasons, it is **not possible** to login on the default image runinng CIRCLean/KittenGroomer (an attacker could exploit that functionality). 
+**Answer GC2 version**: The GC2 version uses the pi password 'sanitizer'. Onboard Wifi and SSH is deactivated only serial console can be used.
 
+**Answer old versions**:
+For security reasons, it is **not possible** to login on the default image runinng CIRCLean/KittenGroomer (an attacker could exploit that functionality). 
 The only thing the default image does is booting, processing the content of the source key, copying over the files to the destination key, and finally shutting down.
-
 
 
 Why/What
@@ -113,12 +114,14 @@ there are more than 2).
     *Note*: This key should be bigger than the original one because any archives
           present on the source key will be expanded and copied.
 
-3. Optional: connect the HDMI cable to a screen to monitor the process.
+3a. Optional: connect the HDMI cable to a screen to monitor the process.
+3b. Optional GC2 version: Connect a LED on GPIO8 or GPIO20 (HIGH while programm is running)   
+3c. Optional: Connect Headpone or speaker to audio out (plays music while programm is running)
 4. Connect the power to the micro USB port.
 
     *Note*: Use a 5V, 700mA+ regulated power supply
 
-5. Wait until you do not see any blinking green light on the board, or if you
-   connected the HDMI cable, check the screen. The process is slow and can take
-   30-60 minutes depending on how many document conversions take place.
+5. Wait until you do not see any active/blinking GPIO8 or GPIO20 LED on the board, or if you
+   connected the HDMI cable, check the screen or if you connected speaker wait until music stops. 
+   The process is slow and can take many minutes depending on how many document conversions take place.
 6. Power off the device and disconnect the drives.
