@@ -25,6 +25,8 @@ Modifications by Grazer Computer Club
    * Pi 1 B Rev. 1
    * Pi 3 B Rev. 1.2
    * Pi Zero 1.3 with USB-HAT 
+   
+  ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
 
 How To Install - GC2 version
 ============================
