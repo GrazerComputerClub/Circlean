@@ -8,21 +8,23 @@ CIRCLean
 
 Modifications by Grazer Computer Club
 ===============================
- * support leds (pi-stop or custom, 26- or 40-pin GPIO) 
-   - red ... bad usb-drive connected
-   - orange ... groomer running (blinking means actual usb transmit ongoning)
-   - green ... good usb-drive connected
-   
-   drop support for led at bcm gpio 4 (usally connected to 1-wire bus) 
-   
- * Famous classic music Midi-files with CC-license 
- * groomer will start as service an not via rc.local
- * groomer start via F12 or GPIO input (26- or 40-pin version input supported)
- * no shutdown after operation (our image will support switch to start groomer)
- * performance optimisation (especially for Pi 1)
+ * Support three LEDs ([Pi-Stop](https://github.com/PiHw/Pi-Stop/blob/master/markdown_source/markdown/Discover-PiStop.md)-Location A or custom, 26- and 40-pin GPIO) 
+   - red (GPIO16 & GPIO7) ... bad USB-drive connected
+   - orange (GPIO8 & GPI20) ... Sync (Groomer) running (blinking means usb transmission ongoning)
+   - green (GPIO21 & GPI25)  ... good USB-drive connected
+ * Drop support for LED at BCM-GPIO 4 (usally connected to 1-wire bus)   
+ * Plays famous classic music Midi-files with CC-license 
+ * Music stopps immediately after sync operation is finished 
+ * Sync (Groomer) will start as service and not via rc.local
+ * Sync (Groomer) will start via F12-Key or GPIO input switch (26- or 40-pin version input supported)
+   - GPIO17 active low
+   - GPIO13 active high
+ * No shutdown after sync operation (our image will support switch to start sync (Groomer))
+ * Performance optimisations (especially needed for Pi 1)
+
  
- Tested:
-   * Pi 1 B Rev. 1
+ Successfully tested:
+   * Pi 1 B Rev. 15995
    * Pi 3 B Rev. 1.2
    * Pi Zero 1.3 with USB-HAT 
    
