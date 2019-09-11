@@ -11,12 +11,13 @@ run_timidity() {
     while true; do
         # -id flags set interface to "dumb" and -qq silences most/all terminal output
         # 44100 khz uses ~97% cpu load on Pi 1 !
-        CPU=`cat /proc/cpuinfo | grep Hardware | cut -d : -f 2 | cut -d " " -f 2`
-        if [ $CPU = "BCM2835" ] ; then
-          echo "Music: using low quality audio to reduce cpu load for ARM11 core"
+        CORES=`cat /proc/cpuinfo | grep -e "^processor" | wc -l`
+        if [ $CORES -eq 1 ] ; then
+          echo "Music: using low quality audio to reduce cpu load for single core cpu"
           # uses ~15-30% cpu load @ Pi 1
           FREQ=11025
         else
+          #echo "Music: using medium quality audio"
           FREQ=22050
         fi
         TIMIDITYFILE=`basename ${TIMIDITY}`
