@@ -64,8 +64,12 @@ process_usb_state(){
                   echo "started"
                   seton 20
                   seton 8
-                  is40pinGPIO.sh && nice -n 15 /usr/local/bin/usb_led -pin 20 -max 1000kbps -off 15% -inv &
-                  nice -n 15 /usr/local/bin/usb_led -pin 8  -max 1000kbps -off 15% -inv &
+                  is40pinGPIO.sh
+                  if [ $? -eq 0 ]; then
+                    nice -n 15 /usr/local/bin/usb_led -pin 8 -pin 20 -max 1000kbps -off 15% -inv &
+                  else
+                    nice -n 15 /usr/local/bin/usb_led -pin 8  -max 1000kbps -off 15% -inv &
+                  fi
                   service usb-led start
                   ;;
              stopped)
