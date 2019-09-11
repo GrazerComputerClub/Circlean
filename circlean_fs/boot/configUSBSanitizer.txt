@@ -2,15 +2,16 @@
 # all outputs with pull-down (not working with P1 Rev. 1, conflict with gpio-key)
 #dtoverlay=gpio0to7-pulldown
 
-# grommer trigger switch GPIO13 and GPIO19 active 3.3V -> F12 - use with 40-pin GPIO
+# grommer trigger switch GPIO17 active GND -> F12-key [26/40-pin GPIO]
+dtoverlay=gpio-key,gpio=17,keycode=88,label="KEY_F12",gpio_pull=2,active_low=1
+
+# grommer trigger switch GPIO13 and GPIO19 active 3.3V -> F12-key [40-pin GPIO]
 dtoverlay=gpio-key,gpio=13,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
 dtoverlay=gpio-key,gpio=19,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
 
-# grommer trigger switch GPIO17 active GND -> F12 - use for 26/40-pin GPIO
-dtoverlay=gpio-key,gpio=17,keycode=88,label="KEY_F12",gpio_pull=2,active_low=1
-
-# shutdown key GPIO3 (active low) - use with 26/40-pin GPIO
+# shutdown key GPIO3 (active low) [26/40-pin GPIO]
 dtoverlay=gpio-shutdown
-# shutdown key GPIO26 (active high) - use with 40-pin GPIO
+
+# shutdown key GPIO26 (active high) [40-pin GPIO]
 dtoverlay=gpio-shutdown,gpio_pin=26,active_low=0,gpio_pull=down 
 
