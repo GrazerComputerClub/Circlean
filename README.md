@@ -24,9 +24,10 @@ Modifications by Grazer Computer Club
 
  
  Successfully tested:
-   * Pi 1 B Rev. 15995
+   * Pi 1 B Rev. 1
    * Pi 3 B Rev. 1.2
    * Pi Zero 1.3 with USB-HAT 
+   * Pi 4 B Rev. 1.1
    
   ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
 
