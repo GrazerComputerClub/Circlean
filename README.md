@@ -31,8 +31,8 @@ Modifications by Grazer Computer Club
    * Pi Zero 1.3 with USB-HAT 
    * Pi 4 B Rev. 1.1
    
-  ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png | width=50%)
-  ![40 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_40pin_IO.png | width=50%)
+  ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png | width=325px)
+  ![40 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_40pin_IO.png | width=307px)
 
 How To Install - GC2 version
 ============================
