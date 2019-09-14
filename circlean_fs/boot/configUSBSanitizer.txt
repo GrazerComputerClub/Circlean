@@ -9,9 +9,9 @@ dtoverlay=gpio-key,gpio=17,keycode=88,label="KEY_F12",gpio_pull=2,active_low=1
 dtoverlay=gpio-key,gpio=13,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
 dtoverlay=gpio-key,gpio=19,keycode=88,label="KEY_F12",gpio_pull=1,active_low=0
 
-# shutdown key GPIO3 (active low) [26/40-pin GPIO]
+# shutdown and restart key GPIO3 (active GND) [26/40-pin GPIO]
 dtoverlay=gpio-shutdown
 
-# shutdown key GPIO26 (active high) [40-pin GPIO]
+# shutdown key GPIO26 (active 3.3V) [40-pin GPIO]
 dtoverlay=gpio-key,gpio=26,keycode=116,label="KEY_POWER",gpio_pull=1,active_low=0
 
