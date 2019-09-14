@@ -1,27 +1,31 @@
 clean(){
-    echo "GROOMER: Copy over, sleeping 15s before shutdown."
-    sleep 15
-    echo "GROOMER: rc.local done, shutting down."
+    echo "GROOMER: Sync finished, sleeping 10 seconds before shutdown."
+    sleep 10
+    echo "GROOMER: shutting down."
     /sbin/shutdown -P -h now
 }
 
 
 if [ -e /dev/sda ]; then
   if [ -e /dev/sdb ]; then
-    # trap clean EXIT TERM INT
+    if systemctl is-system-running | grep -qE "running|degraded"; then
+      echo "GROOMER: Started with system already running, no shutdown."
+    else
+      echo "GROOMER: Started from boot process, shutdown after operation finished."
+      trap clean EXIT TERM INT
+    fi 
     cd /opt/groomer
     #gpio -g mode 4 out
     #gpio -g write 4 1
     /usr/local/bin/led.sh groomer started
-    echo "GROOMER: start"
     /opt/groomer/init.sh
     /usr/local/bin/led.sh groomer stopped
     killall timidity || echo ""
   else
-    echo "GROOMER: USB device /dev/sdb not found"
+    echo "GROOMER: USB device /dev/sdb not found."
   fi
 else
-  echo "GROOMER: USB device /dev/sda not found"
+  echo "GROOMER: USB device /dev/sda not found."
 fi
 
 exit 0
