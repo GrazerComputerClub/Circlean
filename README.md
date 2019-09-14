@@ -22,10 +22,10 @@ Modifications by Grazer Computer Club
  * Shutdown button (26- and 40-pin GPIO supported)
    - GPIO3 (active low)
    - GPIO26 (active high)
- * No shutdown after sync operation (supports dedicated buttons)
+ * Only shutdown after sync if USB-drives are connected on boot
  * Performance optimisations (especially needed for Pi 1)
 
-** Successfully tested:**
+**Successfully tested:**
    * Pi 1 B Rev. 1
    * Pi 3 B Rev. 1.2
    * Pi Zero 1.3 with USB-HAT 
