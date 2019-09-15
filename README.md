@@ -19,11 +19,13 @@ Modifications by Grazer Computer Club
  * Sync (Groomer) will start via F12-Key or GPIO input switch (26- and 40-pin GPIO supported)
    - GPIO17 active low
    - GPIO13 active high
- * Shutdown button (26- and 40-pin GPIO supported)
+ * Shutdown and restart button (26-pin GPIO supported)
    - GPIO3 (active low)
+ * Shutdown button (40-pin GPIO supported)
    - GPIO26 (active high)
  * Only shutdown after sync if USB-drives are connected on boot
  * Performance optimisations (especially needed for Pi 1)
+ * Supports USB port 1.1 for bad USB-drive (avaiable if using USB-Hub/HAT)
 
 **Successfully tested:**
    * Pi 1 B Rev. 1
