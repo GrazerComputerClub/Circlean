@@ -25,12 +25,13 @@ Modifications by Grazer Computer Club
    - GPIO26 (active high)
  * Only shutdown after sync if USB-drives are connected on boot
  * Performance optimisations (especially needed for Pi 1)
- * Supports USB port 1.1 for bad USB-drive (avaiable if using USB-Hub/HAT)
+ * Supports USB port 1.1 for bad USB-drive (available if using USB-Hub/HAT)
 
 **Successfully tested:**
    * Pi 1 B Rev. 1
    * Pi 3 B Rev. 1.2
-   * Pi Zero 1.3 with USB-HAT 
+   * Pi 3 A+ Rev. 1.0 with USB-Hub
+   * Pi Zero 1.3 with USB-HAT
    * Pi 4 B Rev. 1.1
    
   ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
