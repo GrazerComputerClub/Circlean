@@ -29,6 +29,7 @@ Modifications by Grazer Computer Club
 
 **Successfully tested:**
    * Pi 1 B Rev. 1
+   * Pi 2 B Rev. 1.1
    * Pi 3 B Rev. 1.2
    * Pi 3 A+ Rev. 1.0 with USB-Hub
    * Pi Zero 1.3 with [USB-HAT](https://www.waveshare.com/usb-hub-hat.htm)
