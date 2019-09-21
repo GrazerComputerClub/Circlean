@@ -13,22 +13,26 @@ Modifications by Grazer Computer Club
    - orange (GPIO8 & GPI20) ... Sync (Groomer) running (blinking means usb transmission ongoning)
    - green (GPIO21 & GPI25)  ... good USB-drive connected
  * Drop support for LED at GPIO4 (usally connected to 1-wire bus)   
- * Plays famous classic music Midi-files with CC-license 
+ * Plays famous classic music Midi-files with CC-license (Mozart, Vivaldi, ...)
  * Music stopps immediately after sync operation is finished 
  * Sync (Groomer) will start as service and not via rc.local
  * Sync (Groomer) will start via F12-Key or GPIO input switch (26- and 40-pin GPIO supported)
    - GPIO17 active low
    - GPIO13 active high
- * Shutdown button (26- and 40-pin GPIO supported)
+ * Shutdown and restart button (26-pin GPIO supported)
    - GPIO3 (active low)
+ * Shutdown button (40-pin GPIO supported)
    - GPIO26 (active high)
- * No shutdown after sync operation (supports dedicated buttons)
+ * Only shutdown after sync if USB-drives are connected on boot
  * Performance optimisations (especially needed for Pi 1)
+ * Supports USB port 1.1 for bad USB-drive (available if using USB-Hub/HAT and Pi 4)
 
-** Successfully tested:**
+**Successfully tested:**
    * Pi 1 B Rev. 1
+   * Pi 2 B Rev. 1.1
    * Pi 3 B Rev. 1.2
-   * Pi Zero 1.3 with USB-HAT 
+   * Pi 3 A+ Rev. 1.0 with USB-Hub
+   * Pi Zero 1.3 with [USB-HAT](https://www.waveshare.com/usb-hub-hat.htm)
    * Pi 4 B Rev. 1.1
    
   ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
