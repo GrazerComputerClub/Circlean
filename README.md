@@ -9,9 +9,9 @@ CIRCLean
 Modifications by Grazer Computer Club
 ===============================
  * Support three LEDs ([Pi-Stop](https://github.com/PiHw/Pi-Stop/blob/master/markdown_source/markdown/Discover-PiStop.md)-Location A or custom, 26- and 40-pin GPIO supported) 
-   - red (GPIO16 & GPIO7) ... bad USB-drive connected
+   - red (GPIO16 & GPIO7) ... source/bad USB-drive connected
    - orange (GPIO8 & GPI20) ... Sync (Groomer) running (blinking means usb transmission ongoning)
-   - green (GPIO21 & GPI25)  ... good USB-drive connected
+   - green (GPIO21 & GPI25)  ... destination/good USB-drive connected
  * Drop support for LED at GPIO4 (usally connected to 1-wire bus)   
  * Plays famous classic music Midi-files with CC-license (Mozart, Vivaldi, ...)
  * Music stopps immediately after sync operation is finished 
@@ -25,7 +25,8 @@ Modifications by Grazer Computer Club
    - GPIO26 (active high)
  * Only shutdown after sync if USB-drives are connected on boot
  * Performance optimisations (especially needed for Pi 1)
- * Supports USB port 1.1 for bad USB-drive (available if using USB-Hub/HAT and Pi 4)
+ * Supports USB port 1.1 for source-drive (available if using USB-Hub/HAT used with Pi Zero or A)
+ * All Raspberry Pi variants (1-4) use top left usb-port for source-drive
 
 **Successfully tested:**
    * Pi 1 B Rev. 1
