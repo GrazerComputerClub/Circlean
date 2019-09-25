@@ -8,7 +8,7 @@ CIRCLean
 
 Modifications by Grazer Computer Club
 ===============================
- * Support three LEDs ([Pi-Stop](https://github.com/PiHw/Pi-Stop/blob/master/markdown_source/markdown/Discover-PiStop.md)-Location A or custom, 26- and 40-pin GPIO supported) 
+ * Support three LEDs ([PiStop](https://github.com/PiHw/Pi-Stop/blob/master/markdown_source/markdown/Discover-PiStop.md)-Location A or china LED traffic lights, 26- and 40-pin GPIO supported) 
    - red (GPIO16 & GPIO7) ... source/bad USB-drive connected
    - orange (GPIO8 & GPI20) ... Sync (Groomer) running (blinking means usb transmission ongoning)
    - green (GPIO21 & GPI25)  ... destination/good USB-drive connected
@@ -35,6 +35,9 @@ Modifications by Grazer Computer Club
    * Pi 3 A+ Rev. 1.0 with USB-Hub
    * Pi Zero 1.3 with [USB-HAT](https://www.waveshare.com/usb-hub-hat.htm)
    * Pi 4 B Rev. 1.1
+   * [PiStop](https://shop.pimoroni.com/products/pistop-traffic-light-add-on-for-raspberry-pi)
+   * [LED traffic lights](https://aliexpress.com/wholesale?SearchText=LED+traffic+lights+module)
+   
    
   ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
   ![40 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_40pin_IO.png)
