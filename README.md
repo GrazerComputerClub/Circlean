@@ -35,10 +35,11 @@ Modifications by Grazer Computer Club
    * Pi 3 B Rev. 1.2
    * Pi 3 A+ Rev. 1.0 with USB-Hub
    * Pi Zero 1.3 with [USB-HAT](https://www.waveshare.com/usb-hub-hat.htm)
+   * Pi 3 B+ Rev. 1.2
    * Pi 4 B Rev. 1.1
    * [PiStop](https://shop.pimoroni.com/products/pistop-traffic-light-add-on-for-raspberry-pi)
    * [LED traffic lights](https://aliexpress.com/wholesale?SearchText=LED+traffic+lights+module)
-   
+   * [GC2-xHAT](https://github.com/GrazerComputerClub/GC2-xHAT)
    
   ![26 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_26pin_IO.png)
   ![40 Pin GPIO IO](https://raw.githubusercontent.com/GrazerComputerClub/Circlean/master/doc/USB-Sanitizer_40pin_IO.png)
