@@ -27,6 +27,7 @@ Modifications by Grazer Computer Club
  * Performance optimisations (especially needed for Pi 1)
  * Supports USB port 1.1 for source-drive (available if using USB-Hub/HAT used with Pi Zero or A)
  * All Raspberry Pi variants (1-4) use top left usb-port for source-drive
+ * Compatible with GC2-xHAT (Left button sync, right button shutdown, traffic light) 
 
 **Successfully tested:**
    * Pi 1 B Rev. 1
