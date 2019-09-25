@@ -35,7 +35,7 @@ Modifications by Grazer Computer Club
    * Pi 3 B Rev. 1.2
    * Pi 3 A+ Rev. 1.0 with USB-Hub
    * Pi Zero 1.3 with [USB-HAT](https://www.waveshare.com/usb-hub-hat.htm)
-   * Pi 3 B+ Rev. 1.2
+   * Pi 3 B+ Rev. 1.3
    * Pi 4 B Rev. 1.1
    * [PiStop](https://shop.pimoroni.com/products/pistop-traffic-light-add-on-for-raspberry-pi)
    * [LED traffic lights](https://aliexpress.com/wholesale?SearchText=LED+traffic+lights+module)
